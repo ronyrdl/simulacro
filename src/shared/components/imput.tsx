@@ -24,7 +24,7 @@ export default function Input({ label, type = 'text', name, value, onChange, err
                 autoComplete={autoComplete}
                 className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
-            {error && <p className="text-red-500 te xt-sm mt-1">{error}</p>}
+            {error && <p className="mt-1 text-sm text-red-500">{error}</p>}
         </div>
     )
 }

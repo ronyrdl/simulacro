@@ -28,4 +28,14 @@ export const register = async (data: registerDTO): Promise<Auth> => {
     }
 }
 
+export const logout = async (): Promise<void> => {
+
+    try {
+        await api.post("/auth/logout")
+    } catch (error) {
+        const apiError = error as ApiError
+        throw apiError
+    }
+}
+
 

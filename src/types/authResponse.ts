@@ -1,6 +1,6 @@
-import type {user} from "./user"
+import type { User } from "./user"
 
-export interface Auth{
-    accessToken: string
-    user: user
+export interface Auth {
+  accessToken: string
+  user: User
 }

@@ -1,7 +1,9 @@
- export interface user {
-    id:number
-    name:string
-    email:string
-    role:string 
-    createAt: string
+export type Role = "admin" | "user"
+
+export interface User {
+  id: string
+  name: string
+  email: string
+  role: Role
+  createdAt: string
 }

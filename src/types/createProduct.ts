@@ -3,6 +3,6 @@ export interface createProduct{
     description?:string
     price:number
     stock:number
-    categoryId:number
+    categoryId:string
     images?: string[]
 }
